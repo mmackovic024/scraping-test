@@ -1,0 +1,34 @@
+{
+  "name": "scraping-test",
+  "version": "1.0.0",
+  "description": "Scrape and visualize weather data - demo",
+  "keywords": [
+    "Cheerio",
+    "Node",
+    "React",
+    "d3"
+  ],
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Mirko Mackovic",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.19.1",
+    "pug": "2.0.0-beta11",
+    "request": "~2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
