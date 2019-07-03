@@ -6,4 +6,4 @@ Clone and run **npm i** in main folder (for installing server dependencies) and 
 
 Use **npm run dev** in main folder to start server and client simultaneously on local computer
 
-[Live app on Heroku](https://xxxyyy.herokuapp.com/)
+[Live app on Heroku](https://scraping-demo.herokuapp.com/)

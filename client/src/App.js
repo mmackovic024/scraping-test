@@ -12,7 +12,7 @@ import precip from './charts/precip';
 import combined from './charts/combined';
 const ChartArea = React.lazy(() => import('./containers/ChartArea'));
 
-const URL = 'http://localhost:5000/api/all';
+const URL = 'https://scraping-demo.herokuapp.com/api/all';
 
 export const DataContext = createContext(null);
 
