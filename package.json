@@ -6,7 +6,8 @@
     "Cheerio",
     "Node",
     "React",
-    "d3"
+    "d3",
+    "MaterialUI"
   ],
   "main": "./bin/www",
   "scripts": {
