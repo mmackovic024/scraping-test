@@ -1,7 +1,7 @@
 {
   "name": "scraping-test",
   "version": "1.0.0",
-  "description": "Scrape and visualize weather data - demo",
+  "description": "Scrape and visualize local weather data - demo",
   "keywords": [
     "Cheerio",
     "Node",
@@ -30,5 +30,8 @@
     "pug": "2.0.0-beta11",
     "request": "~2.88.0",
     "request-promise": "^4.2.4"
+  },
+  "repository": {
+    "url": "https://github.com/mmackovic024/scraping-test.git"
   }
 }
