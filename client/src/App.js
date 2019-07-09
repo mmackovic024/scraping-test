@@ -88,7 +88,7 @@ export default function App() {
             size={50}
             thickness={3}
             variant="indeterminate"
-            style={{ position: 'relative', left: '50%', marginTop: '2rem' }}
+            style={{ position: 'relative', left: '48%', marginTop: '2rem' }}
           />
         </>
       ) : (
