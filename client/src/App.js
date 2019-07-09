@@ -78,21 +78,41 @@ export default function App() {
         </Link>
       </Typography>
 
-      <ChartSelect selectedValue={selectedValue} handleChange={handleChange} />
-
-      <Suspense
-        fallback={
+      {isLoading ? (
+        <>
+          <Typography variant="h5" align="center" style={{ marginTop: '3rem' }}>
+            Collecting data...
+          </Typography>
           <CircularProgress
             disableShrink
-            size={70}
-            thickness={4}
+            size={50}
+            thickness={3}
             variant="indeterminate"
-            style={{ position: 'relative', left: '50%' }}
+            style={{ position: 'relative', left: '50%', marginTop: '2rem' }}
           />
-        }
-      >
-        <Optional />
-      </Suspense>
+        </>
+      ) : (
+        <>
+          <ChartSelect
+            selectedValue={selectedValue}
+            handleChange={handleChange}
+          />
+
+          <Suspense
+            fallback={
+              <CircularProgress
+                disableShrink
+                size={70}
+                thickness={4}
+                variant="indeterminate"
+                style={{ position: 'relative', left: '50%' }}
+              />
+            }
+          >
+            <Optional />
+          </Suspense>
+        </>
+      )}
     </Container>
   );
 }

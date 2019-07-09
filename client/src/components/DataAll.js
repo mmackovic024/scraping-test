@@ -34,6 +34,7 @@ export default function DataAll({ titleYears, onClick }) {
         color="primary"
         onClick={() => onClick(false)}
         style={{ margin: '5px' }}
+        disabled={isLoading}
       >
         Select years...
       </Button>
